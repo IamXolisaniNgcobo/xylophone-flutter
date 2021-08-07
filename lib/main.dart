@@ -13,6 +13,7 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -41,55 +42,65 @@ class XylophoneApp extends StatelessWidget {
                   child: null,
                 ),
               ),
-              TextButton(
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.yellow),
+              Expanded(
+                child: TextButton(
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.yellow),
+                  ),
+                  onPressed: () {
+                    playSound(3);
+                  },
+                  child: null,
                 ),
-                onPressed: () {
-                  playSound(3);
-                },
-                child: null,
               ),
-              TextButton(
-                child: null,
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.green),
+              Expanded(
+                child: TextButton(
+                  child: null,
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.green),
+                  ),
+                  onPressed: () {
+                    playSound(4);
+                  },
                 ),
-                onPressed: () {
-                  playSound(4);
-                },
               ),
-              TextButton(
-                child: null,
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.teal),
+              Expanded(
+                child: TextButton(
+                  child: null,
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.teal),
+                  ),
+                  onPressed: () {
+                    playSound(5);
+                  },
                 ),
-                onPressed: () {
-                  playSound(5);
-                },
               ),
-              TextButton(
-                child: null,
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.blue),
+              Expanded(
+                child: TextButton(
+                  child: null,
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.blue),
+                  ),
+                  onPressed: () {
+                    playSound(6);
+                  },
                 ),
-                onPressed: () {
-                  playSound(6);
-                },
               ),
-              TextButton(
-                child: null,
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.purple),
+              Expanded(
+                child: TextButton(
+                  child: null,
+                  style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all<Color>(Colors.purple),
+                  ),
+                  onPressed: () {
+                    playSound(7);
+                  },
                 ),
-                onPressed: () {
-                  playSound(7);
-                },
               ),
             ],
           ),
